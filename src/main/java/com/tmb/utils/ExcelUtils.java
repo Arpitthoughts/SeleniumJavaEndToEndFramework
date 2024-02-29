@@ -1,6 +1,7 @@
 package com.tmb.utils;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,6 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.exceptions.InvalidPathForExcelException;
 
 public final class ExcelUtils {
 
@@ -41,7 +43,14 @@ public final class ExcelUtils {
 				testDetails.add(data);
 			}
 
+		} catch (FileNotFoundException e) {
+
+			StackTraceElement[] stackTrace = e.getStackTrace();
+			stackTrace[0] = new StackTraceElement("com.tmb.utils.ExcelUtils", "getTestDetails", "ExcelUtils.java", 28);
+			e.setStackTrace(stackTrace);
+			throw new InvalidPathForExcelException("Excel File you are trying to read is not found");
 		}
+
 		catch (IOException e) {
 
 		}

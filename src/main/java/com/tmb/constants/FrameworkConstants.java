@@ -17,7 +17,7 @@ public class FrameworkConstants {
 	private static final String ITERATIONTESTDATA = "DATA";
 	private static String extentReportFilePath = "";
 	
-	public static String getExtentReportFilePath() throws Exception {
+	public static String getExtentReportFilePath()  {
 		if (extentReportFilePath.isEmpty()) {
 			extentReportFilePath = createReportPath();
 			System.out.println(extentReportFilePath);
@@ -25,7 +25,7 @@ public class FrameworkConstants {
 		return extentReportFilePath;
 	}
 
-	private static String createReportPath() throws Exception {
+	private static String createReportPath()  {
 
 		if (ReadPropertyFile.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("yes")) {
 			return EXTENTREPORTFOLDER + "index.html";

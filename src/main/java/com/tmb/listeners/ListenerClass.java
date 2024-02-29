@@ -16,12 +16,9 @@ public class ListenerClass implements ITestListener, ISuiteListener {
 
 	@Override
 	public void onStart(ISuite suite) {
-		try {
-			ExtentReport.initReport();
-		} catch (Exception e) {
 
-			e.printStackTrace();
-		}
+			ExtentReport.initReport();
+		
 	}
 
 	@Override

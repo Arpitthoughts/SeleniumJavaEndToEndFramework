@@ -5,6 +5,7 @@ import java.util.Map;
 import org.testng.annotations.Test;
 
 import com.tmb.annotations.FrameworkAnnotation;
+import com.tmb.enums.CategoryType;
 import com.tmb.pages.AmazonHomePage;
 
 public final class AmazonDemoTests extends BaseTests {
@@ -12,7 +13,7 @@ public final class AmazonDemoTests extends BaseTests {
 	private AmazonDemoTests() {}
 	
 	
-	@FrameworkAnnotation(author= {"Sachin","Ravi"}, category = { "Smoke","Regression" })
+	@FrameworkAnnotation(author= {"Sachin","Ravi"}, category = { CategoryType.SMOKE,CategoryType.REGRESSION })
 	@Test
 	public void amazonTest(Map<String,String> data) {
 

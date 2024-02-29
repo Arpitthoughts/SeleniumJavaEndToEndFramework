@@ -16,7 +16,7 @@ public class Driver {
 	private Driver() {
 	}
 
-	public static void initDriver(String browserName) throws Exception {
+	public static void initDriver(String browserName)  {
 		WebDriver driver = null;
 		ChromeOptions options = new ChromeOptions();
 		options.setAcceptInsecureCerts(true);
