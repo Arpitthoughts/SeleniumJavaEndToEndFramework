@@ -13,7 +13,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="afterSuite"/>
-          <include name="loginLogoutTest" invocation-numbers="1 0"/>
+          <include name="loginLogoutTest" invocation-numbers="1"/>
           <include name="beforeSuite"/>
         </methods>
       </class> <!-- com.tmb.tests.OrangeHRMTests -->
