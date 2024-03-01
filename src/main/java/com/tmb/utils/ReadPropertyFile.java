@@ -1,7 +1,9 @@
 package com.tmb.utils;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -10,6 +12,7 @@ import java.util.Properties;
 
 import com.tmb.constants.FrameworkConstants;
 import com.tmb.enums.ConfigProperties;
+import com.tmb.exceptions.InvalidPathForExcelException;
 import com.tmb.exceptions.PropertyFileUsageException;
 
 public class ReadPropertyFile {
@@ -35,7 +38,8 @@ public class ReadPropertyFile {
 			}
 
 		} catch (IOException e) {
-			e.getStackTrace();
+			e.printStackTrace();
+			System.exit(0);
 		} finally {
 			if (Objects.nonNull(file)) {
 				try {

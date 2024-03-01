@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-06T14:44:33 IST" name="Suite" finished-at="2024-01-06T14:44:54 IST" duration-ms="21563">
+  <suite started-at="2024-03-01T16:49:59 IST" name="Suite" finished-at="2024-03-01T16:50:18 IST" duration-ms="18672">
     <groups>
     </groups>
-    <test started-at="2024-01-06T14:44:33 IST" name="Test" finished-at="2024-01-06T14:44:54 IST" duration-ms="21563">
+    <test started-at="2024-03-01T16:49:59 IST" name="Test" finished-at="2024-03-01T16:50:18 IST" duration-ms="18672">
       <class name="com.tmb.tests.OrangeHRMTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:33 IST" name="beforeSuite" finished-at="2024-01-06T14:44:33 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:49:59 IST" name="beforeSuite" finished-at="2024-03-01T16:49:59 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:34 IST" name="setUp" finished-at="2024-01-06T14:44:44 IST" duration-ms="10747" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:00 IST" name="setUp" finished-at="2024-03-01T16:50:07 IST" duration-ms="7119" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:34 IST" name="setUp" finished-at="2024-01-06T14:44:49 IST" duration-ms="15123" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:00 IST" name="setUp" finished-at="2024-03-01T16:50:13 IST" duration-ms="12618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,37 +33,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:44 IST" name="loginLogoutTest" description="to check whether the user can successfully login and logout" data-provider="getData" finished-at="2024-01-06T14:44:49 IST" duration-ms="4967" status="PASS">
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:07 IST" name="loginLogoutTest" description="to check whether the user can successfully login and logout" data-provider="getData" finished-at="2024-03-01T16:50:12 IST" duration-ms="4832" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=amuthan, password=admin123, browser=chrome, testname=loginLogoutTest, execute=yes, username=Admin, menuText=}]]>
+                <![CDATA[{fname=amuthan, password=YWRtaW4xMjM=, browser=chrome, testname=loginLogoutTest, execute=yes, username=Admin, menuText=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:49 IST" name="loginLogoutTest" description="to check whether the user can successfully login and logout" data-provider="getData" finished-at="2024-01-06T14:44:53 IST" duration-ms="4608" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:12 IST" name="tearDown" finished-at="2024-03-01T16:50:12 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:13 IST" name="loginLogoutTest" description="to check whether the user can successfully login and logout" data-provider="getData" finished-at="2024-03-01T16:50:17 IST" duration-ms="4318" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=testing mini bytes, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, username=Admin, menuText=}]]>
+                <![CDATA[{fname=testing mini bytes, password=YWRtaW4xMjM=, browser=firefox, testname=loginLogoutTest, execute=yes, username=Admin, menuText=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:49 IST" name="tearDown" finished-at="2024-01-06T14:44:50 IST" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:17 IST" name="tearDown" finished-at="2024-03-01T16:50:18 IST" duration-ms="983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:53 IST" name="tearDown" finished-at="2024-01-06T14:44:54 IST" duration-ms="1049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-01-06T14:44:54 IST" name="afterSuite" finished-at="2024-01-06T14:44:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.tmb.tests.OrangeHRMTests@82de64a]" started-at="2024-03-01T16:50:18 IST" name="afterSuite" finished-at="2024-03-01T16:50:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
