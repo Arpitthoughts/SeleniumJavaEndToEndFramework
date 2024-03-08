@@ -1,3 +1,6 @@
+
+
+
 pipeline{
 agent any
 stages 
@@ -5,19 +8,19 @@ stages
 stage('Build') 
 {
 steps{
-echo "Building the Project.........."
+echo "Building Test Automation Project"
 }
 }
 stage('Test') 
 {
 steps{
-echo "Testing the Project.........."
+echo "Testing the Project by running automated test suite"
 }
 }
 stage('Deploy') 
 {
 steps{
-echo "Deploying the Project.........."
+echo "Deploying the project"
 }
 }
 }
