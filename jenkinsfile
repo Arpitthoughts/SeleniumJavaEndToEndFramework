@@ -1,6 +1,3 @@
-
-
-
 pipeline{
 agent any
 stages 
@@ -8,19 +5,28 @@ stages
 stage('Build') 
 {
 steps{
-echo "Building Test Automation Project"
+echo "Building the Code.........."
+bat "mvn clean"
 }
 }
 stage('Test') 
 {
 steps{
-echo "Testing the Project by running automated test suite"
+echo "Testing the Code.........."
+bat "mvn test"
+}
+}
+stage('Compile') 
+{
+steps{
+echo "Compiling the Project.........."
+bat "mvn compile"
 }
 }
 stage('Deploy') 
 {
 steps{
-echo "Deploying the project"
+echo "Deploying the Project.........."
 }
 }
 }
